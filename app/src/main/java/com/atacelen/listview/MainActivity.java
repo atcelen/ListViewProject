@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Links the main activity with our code
+        // Called to render the UI of your activity. The design is determined by the xml file inflated to the activity.
         setContentView(R.layout.activity_main);
 
         /*
@@ -93,8 +93,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 /*
-                Intents are mainly used to jump between activities and classes ( We will also see other examples)
-                As parameters, the current context and the class that will be switched to, is given
+                Intents are mainly used to jump between activities and classes ( We will also see other examples).
+                As parameters, the current context and the class that will be switched to, is given.
                  */
                 Intent intent = new Intent(MainActivity.this, DetailedInfoActivity.class);
 
